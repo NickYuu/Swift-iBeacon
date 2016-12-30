@@ -58,7 +58,7 @@ extension ViewController {
     fileprivate func setupBeaconRegion() {
         
         guard
-            let beacon1UUID = UUID(uuidString: "94278BDA-B644-4520-8F0C-720EAF059935"),
+            let beacon1UUID = UUID(uuidString: "74278BDA-B644-4520-8F0C-720EAF059935"),
             let beacon2UUID = UUID(uuidString: "88878BDA-8864-6520-FF88-722EAA059938"),
             let beacon3UUID = UUID(uuidString: "64278BDA-B644-4520-8F0C-720EAF059935")
             else { return }
@@ -138,7 +138,7 @@ extension ViewController: CLLocationManagerDelegate {
 // MARK:- LocalNotification
 extension ViewController {
     
-    func showLocalNotification(_ message:String) {
+    fileprivate func showLocalNotification(_ message:String) {
         let noti = UILocalNotification()
         noti.fireDate = Date(timeIntervalSinceNow: 1.0)
         noti.alertBody = message
